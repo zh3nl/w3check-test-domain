@@ -1,7 +1,7 @@
 
 import { Link } from "react-router-dom";
 
-const Index = () => {
+const Admissions = () => {
   return (
     <div className="min-h-screen bg-white">
       {/* Header */}
@@ -20,57 +20,49 @@ const Index = () => {
               <Link to="/admissions" className="text-gray-700 hover:text-blue-900 font-medium">Admissions</Link>
               <Link to="/contact" className="text-gray-700 hover:text-blue-900 font-medium">Contact</Link>
             </div>
-            <div className="md:hidden flex items-center">
-              <button className="text-gray-700">☰</button>
-            </div>
           </div>
         </nav>
       </header>
 
-      {/* Hero Section */}
-      <section className="relative h-96 bg-gradient-to-r from-blue-900 to-blue-700 flex items-center justify-center">
-        <div className="text-center text-white px-4">
-          <h1 className="text-5xl font-bold mb-4">Excellence in Education</h1>
-          <p className="text-xl mb-8 max-w-2xl">
-            Discover your potential at Prestige University, where innovation meets tradition 
-            in a world-class academic environment.
-          </p>
-          <button className="bg-white text-blue-900 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors">
-            Learn More
-          </button>
+      {/* Page Header */}
+      <section className="bg-blue-900 text-white py-16">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h1 className="text-4xl font-bold">Admissions</h1>
+          <p className="text-xl mt-4">Join our community of scholars and innovators</p>
         </div>
       </section>
 
-      {/* Features Section */}
-      <section className="py-16 bg-gray-50">
+      {/* Admissions Content */}
+      <section className="py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-gray-900 mb-4">Why Choose Prestige University?</h2>
+            <h2 className="text-3xl font-bold text-gray-900 mb-4">Application Process</h2>
             <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-              Our commitment to academic excellence and student success has made us a leader in higher education.
+              We're looking for students who are passionate about learning and ready to make an impact.
             </p>
           </div>
+
           <div className="grid md:grid-cols-3 gap-8">
             <div className="text-center">
               <div className="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                <span className="text-2xl">🎓</span>
+                <span className="text-2xl font-bold text-blue-600">1</span>
               </div>
-              <h3 className="text-xl font-semibold mb-2">Academic Excellence</h3>
-              <p className="text-gray-600">World-renowned faculty and cutting-edge research opportunities.</p>
+              <h3 className="text-xl font-semibold mb-2">Apply Online</h3>
+              <p className="text-gray-600">Submit your application through our online portal</p>
             </div>
             <div className="text-center">
               <div className="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                <span className="text-2xl">🌟</span>
+                <span className="text-2xl font-bold text-blue-600">2</span>
               </div>
-              <h3 className="text-xl font-semibold mb-2">Innovation Hub</h3>
-              <p className="text-gray-600">State-of-the-art facilities and technology-driven learning.</p>
+              <h3 className="text-xl font-semibold mb-2">Review Process</h3>
+              <p className="text-gray-600">Our admissions team carefully reviews each application</p>
             </div>
             <div className="text-center">
               <div className="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                <span className="text-2xl">🤝</span>
+                <span className="text-2xl font-bold text-blue-600">3</span>
               </div>
-              <h3 className="text-xl font-semibold mb-2">Global Network</h3>
-              <p className="text-gray-600">Connect with alumni and professionals worldwide.</p>
+              <h3 className="text-xl font-semibold mb-2">Decision</h3>
+              <p className="text-gray-600">Receive your admission decision and next steps</p>
             </div>
           </div>
         </div>
@@ -122,4 +114,4 @@ const Index = () => {
   );
 };
 
-export default Index;
+export default Admissions;
