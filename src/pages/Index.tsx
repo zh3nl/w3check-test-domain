@@ -29,10 +29,7 @@ const Index = () => {
 
       {/* Hero Section - Missing alt text (WCAG violation) */}
       <section className="relative h-64 bg-gradient-to-r from-blue-600 to-blue-800 flex items-center justify-center">
-        <img 
-          src="/lovable-uploads/44735d5d-a00f-4f14-844b-bbeffe2b4621.png" 
-          className="absolute inset-0 w-full h-full object-cover"
-        />
+        <img src="/lovable-uploads/44735d5d-a00f-4f14-844b-bbeffe2b4621.png" className="absolute inset-0 w-full h-full object-cover" alt="Description of 44735d5d-a00f-4f14-844b-bbeffe2b4621" />
         <div className="absolute inset-0 bg-blue-900 bg-opacity-50"></div>
         <div className="relative text-center text-white px-4 z-10">
           <h1 className="text-4xl font-bold mb-2">Our research improves lives</h1>
