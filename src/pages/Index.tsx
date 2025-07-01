@@ -27,52 +27,177 @@ const Index = () => {
         </nav>
       </header>
 
-      {/* Hero Section */}
-      <section className="relative h-96 bg-gradient-to-r from-blue-900 to-blue-700 flex items-center justify-center">
-        <div className="text-center text-white px-4">
-          <h1 className="text-5xl font-bold mb-4">Excellence in Education</h1>
-          <p className="text-xl mb-8 max-w-2xl">
-            Discover your potential at Prestige University, where innovation meets tradition 
-            in a world-class academic environment.
+      {/* Hero Section - Missing alt text (WCAG violation) */}
+      <section className="relative h-64 bg-gradient-to-r from-blue-600 to-blue-800 flex items-center justify-center">
+        <img 
+          src="/lovable-uploads/44735d5d-a00f-4f14-844b-bbeffe2b4621.png" 
+          className="absolute inset-0 w-full h-full object-cover"
+        />
+        <div className="absolute inset-0 bg-blue-900 bg-opacity-50"></div>
+        <div className="relative text-center text-white px-4 z-10">
+          <h1 className="text-4xl font-bold mb-2">Our research improves lives</h1>
+          <p className="text-lg mb-4 max-w-2xl mx-auto">
+            At Prestige University, we're committed to advancing knowledge and making a positive impact through groundbreaking research and innovation.
           </p>
-          <button className="bg-white text-blue-900 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors">
-            Learn More
-          </button>
         </div>
       </section>
 
-      {/* Features Section */}
-      <section className="py-16 bg-gray-50">
+      {/* Research Highlights Section */}
+      <section className="py-12 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid md:grid-cols-3 gap-8 mb-12">
+            <div className="text-center">
+              <img src="https://images.unsplash.com/photo-1581092795360-fd1ca04f0952?w=300&h=200&fit=crop" className="w-full h-48 object-cover rounded mb-4" />
+              <h3 className="text-lg font-semibold mb-2">Research with results</h3>
+              <p className="text-gray-600 text-sm">Our interdisciplinary approach leads to breakthrough discoveries that benefit society.</p>
+            </div>
+            <div className="text-center">
+              <img src="https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=300&h=200&fit=crop" className="w-full h-48 object-cover rounded mb-4" />
+              <h3 className="text-lg font-semibold mb-2">Global recognition</h3>
+              <p className="text-gray-600 text-sm">Our faculty and students are recognized worldwide for their contributions to science and society.</p>
+            </div>
+            <div className="text-center">
+              <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=300&h=200&fit=crop" className="w-full h-48 object-cover rounded mb-4" />
+              <h3 className="text-lg font-semibold mb-2">10 years of excellence</h3>
+              <p className="text-gray-600 text-sm">A decade of groundbreaking research and academic achievement.</p>
+            </div>
+          </div>
+
+          {/* Statistics - Poor color contrast (WCAG violation) */}
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-gray-900 mb-4">Why Choose Prestige University?</h2>
-            <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-              Our commitment to academic excellence and student success has made us a leader in higher education.
-            </p>
+            <h2 className="text-2xl font-bold mb-4">The #1 public research university in the U.S.</h2>
+            <p style={{color: '#CCCCCC'}} className="text-lg mb-4">Leading innovation and discovery for over a century</p>
+            <div className="grid md:grid-cols-3 gap-8">
+              <div>
+                <div className="text-3xl font-bold text-blue-600">50</div>
+                <p className="text-sm">top 10 graduate programs</p>
+              </div>
+              <div>
+                <div className="text-3xl font-bold text-blue-600">100+</div>
+                <p className="text-sm">research centers and institutes</p>
+              </div>
+              <div>
+                <div className="text-3xl font-bold text-blue-600">500+</div>
+                <p className="text-sm">groundbreaking inventions</p>
+              </div>
+            </div>
           </div>
+        </div>
+      </section>
+
+      {/* Call to Action Banner - Orange like UC Berkeley */}
+      <section className="bg-yellow-500 py-8">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <h2 className="text-2xl font-bold text-white mb-2">Creating more venture-backed startups than any other university in the world</h2>
+          {/* Empty link with no accessible name (WCAG violation) */}
+          <a href="#" className="inline-block bg-blue-600 text-white px-6 py-2 rounded font-semibold hover:bg-blue-700"></a>
+        </div>
+      </section>
+
+      {/* Recent Discoveries Section - Skipping heading levels (WCAG violation) */}
+      <section className="py-12 bg-gray-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="text-2xl font-bold mb-8">Recent discoveries</h2>
+          {/* Skipping from h2 to h4 - violation of proper heading hierarchy */}
+          <h4 className="text-lg font-semibold mb-6">Breakthrough research from our faculty</h4>
+          
+          <div className="grid md:grid-cols-3 gap-6 mb-8">
+            <div className="bg-white p-4 rounded shadow">
+              <img src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?w=300&h=200&fit=crop" className="w-full h-32 object-cover rounded mb-3" />
+              <h3 className="font-semibold text-sm mb-2">Advancing cancer treatment</h3>
+              <p className="text-xs text-gray-600">New immunotherapy approaches show promising results in clinical trials.</p>
+            </div>
+            <div className="bg-white p-4 rounded shadow">
+              <img src="https://images.unsplash.com/photo-1559757175-0eb30cd8c063?w=300&h=200&fit=crop" className="w-full h-32 object-cover rounded mb-3" />
+              <h3 className="font-semibold text-sm mb-2">Quantum computing breakthrough</h3>
+              <p className="text-xs text-gray-600">Researchers achieve new milestone in quantum error correction.</p>
+            </div>
+            <div className="bg-white p-4 rounded shadow">
+              <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=300&h=200&fit=crop" className="w-full h-32 object-cover rounded mb-3" />
+              <h3 className="font-semibold text-sm mb-2">Climate change solutions</h3>
+              <p className="text-xs text-gray-600">New carbon capture technology offers hope for reducing emissions.</p>
+            </div>
+          </div>
+
+          <div className="grid md:grid-cols-3 gap-6">
+            <div className="bg-white p-4 rounded shadow">
+              <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=300&h=200&fit=crop" className="w-full h-32 object-cover rounded mb-3" />
+              <h3 className="font-semibold text-sm mb-2">Artificial intelligence ethics</h3>
+              <p className="text-xs text-gray-600">Developing frameworks for responsible AI development and deployment.</p>
+            </div>
+            <div className="bg-white p-4 rounded shadow">
+              <img src="https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=300&h=200&fit=crop" className="w-full h-32 object-cover rounded mb-3" />
+              <h3 className="font-semibold text-sm mb-2">Neuroscience advances</h3>
+              <p className="text-xs text-gray-600">Understanding brain function at unprecedented resolution.</p>
+            </div>
+            <div className="bg-white p-4 rounded shadow">
+              <img src="https://images.unsplash.com/photo-1581092795360-fd1ca04f0952?w=300&h=200&fit=crop" className="w-full h-32 object-cover rounded mb-3" />
+              <h3 className="font-semibold text-sm mb-2">Sustainable energy</h3>
+              <p className="text-xs text-gray-600">Revolutionary battery technology for renewable energy storage.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Academics Section */}
+      <section className="py-12 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="text-2xl font-bold mb-8">Academics</h2>
+          <p className="text-gray-600 mb-8 max-w-3xl">Our comprehensive academic programs prepare students for leadership in their chosen fields. With world-class faculty and cutting-edge research opportunities, we provide an unparalleled educational experience.</p>
+          
+          <div className="grid md:grid-cols-2 gap-8">
+            <div>
+              <img src="https://images.unsplash.com/photo-1460574283810-2aab119d8511?w=400&h=250&fit=crop" className="w-full h-48 object-cover rounded mb-4" />
+              <h3 className="text-lg font-semibold mb-2">Undergraduate programs</h3>
+              <p className="text-gray-600 text-sm">Over 100 undergraduate majors across diverse fields of study.</p>
+            </div>
+            <div>
+              <img src="https://images.unsplash.com/photo-1487958449943-2429e8be8625?w=400&h=250&fit=crop" className="w-full h-48 object-cover rounded mb-4" />
+              <h3 className="text-lg font-semibold mb-2">Graduate programs</h3>
+              <p className="text-gray-600 text-sm">World-renowned graduate programs leading to advanced degrees.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Student Life Section */}
+      <section className="py-12 bg-gray-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="text-2xl font-bold mb-8">Student life</h2>
+          <p className="text-gray-600 mb-8 max-w-3xl">Life at Prestige University extends far beyond the classroom. Our vibrant campus community offers countless opportunities for personal growth, leadership development, and lifelong friendships.</p>
+          
           <div className="grid md:grid-cols-3 gap-8">
-            <div className="text-center">
-              <div className="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                <span className="text-2xl">🎓</span>
-              </div>
-              <h3 className="text-xl font-semibold mb-2">Academic Excellence</h3>
-              <p className="text-gray-600">World-renowned faculty and cutting-edge research opportunities.</p>
+            <div>
+              <img src="https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?w=300&h=200&fit=crop" className="w-full h-48 object-cover rounded mb-4" />
+              <h3 className="text-lg font-semibold mb-2">Housing options</h3>
+              <p className="text-gray-600 text-sm">Diverse residential communities that foster learning and growth.</p>
             </div>
-            <div className="text-center">
-              <div className="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                <span className="text-2xl">🌟</span>
-              </div>
-              <h3 className="text-xl font-semibold mb-2">Innovation Hub</h3>
-              <p className="text-gray-600">State-of-the-art facilities and technology-driven learning.</p>
+            <div>
+              <img src="https://images.unsplash.com/photo-1605810230434-7631ac76ec81?w=300&h=200&fit=crop" className="w-full h-48 object-cover rounded mb-4" />
+              <h3 className="text-lg font-semibold mb-2">Student organizations</h3>
+              <p className="text-gray-600 text-sm">Over 1,000 student organizations covering every interest and passion.</p>
             </div>
-            <div className="text-center">
-              <div className="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                <span className="text-2xl">🤝</span>
-              </div>
-              <h3 className="text-xl font-semibold mb-2">Global Network</h3>
-              <p className="text-gray-600">Connect with alumni and professionals worldwide.</p>
+            <div>
+              <img src="https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=300&h=200&fit=crop" className="w-full h-48 object-cover rounded mb-4" />
+              <h3 className="text-lg font-semibold mb-2">Athletics and recreation</h3>
+              <p className="text-gray-600 text-sm">Championship athletics and world-class recreational facilities.</p>
             </div>
           </div>
+        </div>
+      </section>
+
+      {/* Take a Tour Section */}
+      <section className="relative py-16 bg-blue-900 text-white">
+        <div className="absolute inset-0 bg-gradient-to-r from-blue-900 to-blue-700 opacity-90"></div>
+        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <h2 className="text-3xl font-bold mb-4">Take a tour</h2>
+          {/* Button with focus outline removed (WCAG violation) */}
+          <button 
+            className="bg-white text-blue-900 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors"
+            style={{outline: 'none'}}
+          >
+            Schedule a visit
+          </button>
         </div>
       </section>
 
