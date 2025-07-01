@@ -78,10 +78,7 @@ const About = () => {
             </div>
             <div>
               {/* Accessibility Violation: Image without alt text */}
-              <img 
-                src="https://images.unsplash.com/photo-1562774053-701939374585?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
-                className="rounded-lg shadow-lg w-full h-80 object-cover"
-              />
+              <img src="https://images.unsplash.com/photo-1562774053-701939374585?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" className="rounded-lg shadow-lg w-full h-80 object-cover" alt="Description of photo-1562774053-701939374585?ixlib=rb-4" />
             </div>
           </div>
         </div>
